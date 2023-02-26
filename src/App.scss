@@ -46,3 +46,8 @@ select{
 .Header{
   margin: 30px;
 }
+@media screen and (max-width: 500px) {
+  .Input{
+    width: 100px;
+  }
+}

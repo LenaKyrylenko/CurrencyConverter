@@ -23,9 +23,9 @@ function FetchData({ url }) {
   }, [])
   console.log('items ', items)
   if (error) {
-    return <div>Error: {error.message}</div>
+    return <div> <h1>Error: {error.message}</h1></div>
   } else if (!isLoaded) {
-    return <div>Loading...</div>
+    return <div><h1> Loading...</h1></div>
   } else {
     return (
       <>

@@ -46,18 +46,20 @@ const dataEur = data?.[0]
     },
   ]
 
-  console.log('data 0 ',dataEur)
 
   return (
     <Row className='Header'>
-      <Col span={8}></Col>
 
-      <Col span={8}>
+      <Col xl={{ offset: 8, span: 8 }}
+      md={{ offset: 6 }}
+      sm={{ offset: 3}}
+    xs={{ offset: 2}}
+      >
         <h1> Курс валют відносно гривні (UAH) </h1>
 
         <Tabs defaultActiveKey="1" type="card" items={items} />
       </Col>
-      <Col span={8}></Col>
+      
     </Row>
   )
 }
