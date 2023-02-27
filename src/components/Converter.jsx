@@ -36,8 +36,8 @@ const Converter = ({ USD, UAH, EUR }) => {
         <Col
           xl={{ offset: 8, span: 8 }}
           md={{ offset: 6, span: 16 }}
-          sm={{ offset: 3 }}
-          xs={{ offset: 3 }}
+          sm={{ offset: 5, span:15 }}
+          xs={{ offset: 3,span: 18 }}
         >
           <h1> Конвертер валют в обох напрямках</h1>
         </Col>
