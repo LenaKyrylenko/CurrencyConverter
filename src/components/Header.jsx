@@ -1,14 +1,14 @@
-import { Space, Table, Tag, Col, Row } from 'antd'
+import { Table, Col, Row } from 'antd'
 import { Tabs } from 'antd'
 function Header({ EUR, USD }) {
   const columns = [
     {
-      title: 'Name',
+      title: <span style={{ fontSize: '18px' }}>Валюта</span>,
       dataIndex: 'name',
       key: 'name',
     },
     {
-      title: 'Currency',
+      title: <span style={{ fontSize: '18px' }}>Курс до гривні</span>,
       dataIndex: 'currency',
       key: 'currency',
     },

@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react'
-import Header from './Header'
-import Converter from './Converter'
-
+import Wrapper from '../components/Wrapper'
 function FetchData({ url }) {
   const [error, setError] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [items, setItems] = useState([])
-
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -21,7 +18,6 @@ function FetchData({ url }) {
         },
       )
   }, [])
-  console.log('items ', items)
   if (error) {
     return <div> <h1>Error: {error.message}</h1></div>
   } else if (!isLoaded) {
@@ -30,7 +26,7 @@ function FetchData({ url }) {
     return (
       <>
      
-      <Converter
+      <Wrapper
         USD={items?.rates?.USD}
         EUR={items?.rates?.EUR}
         UAH={items?.rates?.UAH}
